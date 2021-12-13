@@ -9,15 +9,18 @@
     <link rel="shortcut icon" href="img/B9-b30wH_400x400.jpg" type="image/x-icon">
 </head>
 <body>
-
-  <h1>Calculadora</h1>
-  <input id="n1" onchange="setNum1(this.value)" type="number">
-  <input id="n2">
-  <button class="button1" id="btn-sum" onclick="setOperator(OP_SUM)">+</button>
-  <button class="button1" id="btn-minus" onclick="setOperator(OP_MINUS)">-</button>
-  <button class="button1" onclick="setOperator(OP_MULTI)">x</button>
-  <button class="button1" id="btn-div" onclick="setOperator(OP_DIV)">÷</button>
-  <h2>Resultado: <span id="result"></span></h2>
+  <div>
+    <h1>Calculadora</h1>
+    <input id="n1" onchange="setNum1(this.value)" type="number">
+    <br><br>
+    <input id="n2" onchange="setNum2(this.value)" type="number">
+    <br><br>
+    <button class="button1" id="btn-sum" onclick="setOperator(OP_SUM)">+</button>
+    <button class="button1" id="btn-minus" onclick="setOperator(OP_MINUS)">-</button>
+    <button class="button1" onclick="setOperator(OP_MULTI)">x</button>
+    <button class="button1" id="btn-div" onclick="setOperator(OP_DIV)">÷</button>
+    <h2>Resultado: <span id="result"></span></h2>
+  </div>
     <script src="script.js"></script></script>
 </body>
 </body>

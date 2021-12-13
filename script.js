@@ -35,6 +35,11 @@
       setResult()
     }
 
+    function setNum2(value) {
+      state.num2 = parseFloat(value)
+      setResult()
+    }
+
     // joga estado na tela
     function render() {
       const inputNum1 = document.getElementById("n1")
