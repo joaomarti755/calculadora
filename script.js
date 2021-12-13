@@ -46,14 +46,33 @@
       const inputNum2 = document.getElementById("n2")
       const spanResult = document.getElementById("result")
       const btnSum = document.getElementById("btn-sum")
+      const btnMinus = document.getElementById("btn-minus")
+      const btnDiv = document.getElementById("btn-div")
+      const btnMulti = document.getElementById("btn-multi")
 
       inputNum1.value = state.num1
       inputNum2.value = state.num2
       spanResult.innerText = state.result
 
       btnSum.classList.remove("active")
-      if (state.operator === OP_SUM) {
-        btnSum.classList.add("active")
+      btnMinus.classList.remove("active")
+      btnDiv.classList.remove("active")
+      btnMulti.classList.remove("active")
+      switch (state.operator) {
+        case OP_SUM:
+          btnSum.classList.add("active")
+          break;
+        case OP_MULTI:
+          btnMulti.classList.add("active")
+          break;
+        case OP_MINUS:
+          btnMinus.classList.add("active")
+          break;
+        case OP_DIV:
+          btnDiv.classList.add("active")
+          break;
+        default:
+          break;
       }
     }
 

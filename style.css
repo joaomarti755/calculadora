@@ -29,6 +29,7 @@ body {
   }
   .active {
     background: #4CAF50;
+    color: white;
   }
   .boxCal{
     background-color: rgb(255, 255, 255);
