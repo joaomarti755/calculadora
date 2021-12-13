@@ -13,10 +13,11 @@
   <input id="n1" onchange="setNum1(this.value)" type="number">
   <input id="n2">
   <button class="button1" id="btn-sum" onclick="setOperator(OP_SUM)">+</button>
-  <button class="button1" id="btn-minus">-</button>
+  <button class="button1" id="btn-minus" onclick="setOperator(OP_MINUS)">-</button>
   <button class="button1" onclick="setOperator(OP_MULTI)">x</button>
-  <button class="button1" id="btn-div">÷</button>
+  <button class="button1" id="btn-div" onclick="setOperator(OP_DIV)">÷</button>
   <h2>Resultado: <span id="result"></span></h2>
-    <script src="script.js"></script>
+    <script src="script.js"></script></script>
+</body>
 </body>
 </html>
